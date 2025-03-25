@@ -1,5 +1,64 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: white;
+  color: black;
+  margin: 0;
+}
+
+header {
+  color: black;
+  width: 100%;
+}
+
+h1 {
+  font-size: 8rem;
+  font-weight: 700;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.biography-group {
+  background-color: black;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+#tribute-info {
+  display: inline-block;
+  width: 49%;
+  color: white;
+  flex-wrap: wrap;
+}
+
+figure {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 49%;
+}
+
 img {
   display: block;
   max-width: 100%;
-  margin: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+figcaption {
+  margin: 0.5rem 1rem 0;
+  font-size: 0.75rem;
+  font-style: italic;
+  color: darkgray;
+}
+
+a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+a:hover {
+  color: burlywood;
 }
