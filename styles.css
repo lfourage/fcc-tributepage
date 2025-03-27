@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Courier New', Courier, monospace;
   background-color: white;
@@ -16,28 +20,37 @@ h1 {
   text-align: center;
   width: 80%;
   margin: 0 auto;
+  text-shadow: 3px 3px 1px orangered;
+}
+
+#citation {
+  width: 100%;
+  text-align: center;
+  color: gray;
 }
 
 .biography-group {
   background-color: black;
-  display: flex;
   width: 100%;
-  justify-content: space-between;
   padding: 20px;
+  font-size: 1.5rem;
+  border-top: 3px solid orangered;
+  border-bottom: 3px solid orangered;
 }
 
 #tribute-info {
-  display: inline-block;
-  width: 49%;
+  width: 90%;
+  margin: auto auto 0 auto;
   color: white;
-  flex-wrap: wrap;
+}
+
+#tribute-info p {
+  text-align: justify;
 }
 
 figure {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  width: 49%;
+  width: 50%;
+  float: left;
 }
 
 img {
@@ -56,9 +69,20 @@ figcaption {
 
 a {
   text-decoration: none;
-  color: antiquewhite;
+  color: orange;
 }
 
 a:hover {
-  color: burlywood;
+  color: orangered;
+}
+
+footer {
+  border-top: 1px solid orange;
+  background-color: grey;
+  height: 3rem;
+}
+
+footer p {
+  color: antiquewhite;
+  text-align: center;
 }
