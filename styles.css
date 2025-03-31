@@ -2,15 +2,26 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bodybackgroundcolor: white;
+  --bodyfontcolor: black;
+  --lightempcolor: orange;
+  --empcolor: orangered;
+  --biobackgroundcolor: black;
+  --biofontcolor: white;
+  --legendfontcolor: darkgrey;
+  --footfontcolor: antiquewhite;
+}
+
 body {
   font-family: "Courier New", Courier, monospace;
-  background-color: white;
-  color: black;
+  background-color: var(--bodybackgroundcolor);
+  color: var(--bodyfontcolor);
   margin: 0;
 }
 
 header {
-  color: black;
+  color: var(--bodyfontcolor);
 }
 
 h1 {
@@ -19,7 +30,7 @@ h1 {
   text-align: center;
   width: 80%;
   margin: 0 auto;
-  text-shadow: 3px 3px 1px orangered;
+  text-shadow: 3px 3px 1px var(--empcolor);
 }
 
 blockquote {
@@ -31,17 +42,17 @@ blockquote cite {
 }
 
 .biography-group {
-  background-color: black;
+  background-color: var(--biobackgroundcolor);
   width: 100%;
   padding: 20px;
   font-size: 1.5rem;
-  border-top: 3px solid orangered;
+  border-top: 3px solid var(--empcolor);
 }
 
 #tribute-info {
   width: 90%;
   margin: auto auto 0 auto;
-  color: white;
+  color: var(--biofontcolor);
 }
 
 #tribute-info p {
@@ -68,26 +79,26 @@ figcaption {
   margin: 0.5rem 1rem 0;
   font-size: 0.75rem;
   font-style: italic;
-  color: darkgray;
+  color: var(--legendfontcolor);
 }
 
 a {
   text-decoration: none;
-  color: orange;
+  color: var(--lightempcolor);
 }
 
 a:hover {
-  color: orangered;
+  color: var(--empcolor);
 }
 
 footer {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  background: linear-gradient(grey, black);
+  border-top: 1px solid var(--biobackgroundcolor);
+  border-bottom: 1px solid var(--biobackgroundcolor);
+  background: linear-gradient(grey, var(--biobackgroundcolor));
 }
 
 footer p {
-  color: antiquewhite;
+  color: var(--footfontcolor);
   text-align: center;
-  text-shadow: 1px 1px black;
+  text-shadow: 1px 1px var(--bodyfontcolor);
 }
